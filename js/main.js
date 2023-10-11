@@ -9,12 +9,16 @@ var menubtn = document.getElementById ("menubtn")
 var navbarlink = document.getElementById ("navbarlink")
 var menu = document.getElementById ("menu")
 
+navbarlink.style.right = "-250px";
+
 menubtn.onclick = function (){
     if (navbarlink.style.right == "-250px"){
         navbarlink.style.right = "0";
+        menu.src = "img/close.PNG";
     }
     else {
         navbarlink.style.right = "-250px";  
+        menu.src = "img/menu1.PNG";
     }
 }
 
